@@ -35,3 +35,15 @@ echo ${each%.lmiss} | tr "\n" "	" >> miss_table.txt
 cat ${each} | datamash -H mean 4 | tr "\n" "	" > temp.txt
 cut -f 2 -d "	" temp.txt >> miss_table.txt
 done
+
+#create a file with the 80 individuals used for demography
+vcftools --vcf Intergenic_regions_thin_0.3kb.recode.vcf --keep list_indiv.txt --recode --recode-INFO-all --out Chosen_80_indiv
+
+reference=/home/taliadoros/Desktop/phd_projects/Cb/selection_fungicide_resistance/NCBI_Reference.fasta
+vcf_file=Chosen_80_indiv.recode.vcf
+/home/taliadoros/software/gatk-4.1.8.1/gatk SelectVariants \
+ -R ${reference} \
+ -V ${vcf_file} \
+ --exclude-non-variants \
+ --remove-unused-alternates \
+ -O Chosen_80_indiv_filtered.recode.vcf

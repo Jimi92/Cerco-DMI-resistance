@@ -1,0 +1,43 @@
+
+
+                                      _______________
+
+                                         OmegaPlus
+                                      _______________
+
+
+
+ OmegaPlus version 3.0.3 released by Nikolaos Alachiotis and Pavlos Pavlidis in April 2018.
+
+
+ Command:
+
+	 /home/taliadoros/software/omegaplus-master/OmegaPlus -name Chr8_selection -input CM008506.1_analysis.recode.vcf -grid 50344 -minwin 1000 -maxwin 100000 -all -seed 417790
+
+
+
+ Input file format (0:ms, 1:fasta, 2:macs, 3:vcf, 4:sf, 5:mbs):	3
+ Gap (-) imputation:						OFF
+ Ambiguous character (N) imputation:				OFF
+ Omega search strategy:						Exhaustive
+ Alignment deduction to binary:					OFF
+ Total number of samples in the VCF:				79
+ Samples excluded from the analysis:				0
+
+
+ Alignment 1
+		Sequences:		79
+		Sites:			44152
+		Discarded sites:	75
+
+		Processing (seconds):	1933.095980
+
+		Max Omega:		3032.435547
+		Location:		2160699.00
+		Leftmost SNP:		2159676
+		Rightmost SNP:		2161031
+
+
+ Total elapsed time 1933.120800 seconds.
+
+

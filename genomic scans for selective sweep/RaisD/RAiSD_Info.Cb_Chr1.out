@@ -1,0 +1,30 @@
+
+ ooooooooo.         .o.        o8o   .oooooo..o oooooooooo.
+ `888   `Y88.      .888.       `"'  d8P'    `Y8 `888'   `Y8b
+  888   .d88'     .8"888.     oooo  Y88bo.       888      888
+  888ooo88P'     .8' `888.    `888   `"Y8888o.   888      888
+  888`88b.      .88ooo8888.    888       `"Y88b  888      888
+  888  `88b.   .8'     `888.   888  oo     .d8P  888     d88'
+ o888o  o888o o88o     o8888o o888o 8""88888P'  o888bood8P'
+
+ RAiSD, Raised Accuracy in Sweep Detection
+ This is version 2.8 (released in April 2020)
+ Copyright (C) 2017, and GNU GPL'd, by Nikolaos Alachiotis and Pavlos Pavlidis
+ Contact n.alachiotis/pavlidisp at gmail.com
+
+ Command: /home/taliadoros/software/raisd-master/RAiSD -I CM008499.1_analysis.recode.vcf -n Cb_Chr1.out -f -B 6188355 76324 -R -y 1 
+ Samples: 89
+ Format:  vcf
+
+ A pattern structure of 43690 patterns (max. capacity) and approx. 2 MB memory footprint has been created.
+
+
+ 0: Set CM008499.1 | sites 76324 | snps 52682 | region 6188355 - Var 5534676 3.754e+01 | SFS 346724 5.060e+00 | LD 99020 5.000e+01 | MuStat 5531127 5.948e+02
+
+ Sets (total):     1
+ Sets (processed): 1
+ Sets (skipped):   0
+
+ Total execution time 2.10423 seconds
+ Total memory footprint 23283 kbytes
+

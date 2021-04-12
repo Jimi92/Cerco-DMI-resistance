@@ -116,7 +116,7 @@ An example of the estimation file for the scenario of two bottlenecks:
 
 // Priors and rules file
 // *********************
-
+```{bash}
 [PARAMETERS]
 //#isInt? #name #dist. #min #max
 //all N are in number of haploid individuals
@@ -132,8 +132,20 @@ An example of the estimation file for the scenario of two bottlenecks:
 1 ANCSIZE2 = CNE*RESNEB2 output
 1 ANCSIZE1 = ANCSIZE2*RESNEB1 output
 
+#Were: CNE is the current effective population size
+#RESNEB1 is the resize factor of Ne after the first bottleneck
+#TBOT1 is the time of the first bottleneck
+#TBOT2 is the time of the second bottleneck
+#RESNEB2 is the resize factor after the second bottleneck
+#ANCSIZE2 is the ancestral population size before the second bottleneck
+#ANCSIZE1 is the ancestral population size before the first bottleneck
+```
+
+
+
 An example of the template file for the scenario of two bottlenecks:
 
+```{bash}
 //Number of population samples (demes)
 1
 //Population effective sizes (number of genes)
@@ -155,13 +167,15 @@ TBOT2 0 0 0 RESNEB2 0 0
 //per Block: data type, num loci, rec. rate and mut rate + optional parameters
 FREQ 1 0.00000074 0.00000001 OUTEXP
 
-Were: CNE is the current effective population size
-TBOT1 is the time of the first bottleneck
-RESNEB1 is the resize factor of Ne after the first bottleneck
-TBOT2 is the time of the second bottleneck
-RESNEB2 is the resize factor after the second bottleneck
-ANCSIZE1 is the ancestral population size before the first bottleneck
-ANCSIZE2 is the ancestral population size before the second bottleneck
+#Were: CNE is the current effective population size
+#TBOT1 is the time of the first bottleneck
+#RESNEB1 is the resize factor of Ne after the first bottleneck
+#TBOT2 is the time of the second bottleneck
+#RESNEB2 is the resize factor after the second bottleneck
+#ANCSIZE1 is the ancestral population size before the first bottleneck
+#ANCSIZE2 is the ancestral population size before the second bottleneck
+
+```
 
 Genome scans for selective sweeps
 

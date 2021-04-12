@@ -1,0 +1,17 @@
+// Priors and rules file
+// *********************
+
+[PARAMETERS]
+//#isInt? #name #dist. #min #max
+//all N are in number of haploid individuals
+1 CNE unif 79391 86878 output bounded
+1 TBOT1 unif 500 15000 output
+1 RESNEB1 unif 10 100 output bounded
+1 TBOT2 unif 20 500 output
+0 RESNEB2 unif 10 100 output bounded
+[RULES]
+
+[COMPLEX PARAMETERS]
+
+1 ANCSIZE2 = CNE*RESNEB2 output
+1 ANCSIZE1 = ANCSIZE2*RESNEB1 output

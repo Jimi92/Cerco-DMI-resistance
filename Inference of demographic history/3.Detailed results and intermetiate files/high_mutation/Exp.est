@@ -1,0 +1,14 @@
+// Priors and rules file
+// *********************
+
+[PARAMETERS]
+//#isInt? #name #dist. #min #max
+//all N are in number of haploid individuals
+1 CNE unif 79391 86878 output bounded
+1 TCH unif 50 15000 output
+0 RESNE unif 0.1 1 output bounded
+[RULES]
+
+[COMPLEX PARAMETERS]
+
+1 ANCSIZE = CNE*RESNE output 

@@ -95,11 +95,16 @@ We compared a set of models with different population size change scenarios. The
 To define the search range of the current effective population size, we estimated the present-day effective population size of the C. beticola population based on Watterson’s θ and a neutral mutation rate of 1×10-8 mutation per site per generation. As the neutral mutation rate of Cercospora spp. is unknown we additionally performed 100,000 simulations using the for each of the four demographic scenarios with four different mutation rates (5×10-7, 5×10-8, 3×10-8 ,1×10-8 mutation per site per generation) in 25 replicated runs per specified mutation rate (25 runs x 10,000 simulations x 40 cycles of EM simulations for each scenario for each mutation rate). For our final simulations, we choose the neutral mutation rate that showed the lowest difference between the expected maximum log-likelihood and the observed log-likelihood.
 The maximum log-likelihood values were compared with the Akaike Information Criterion (AIC). Here we present the AIC value for each combination of scenario and mutation rate. as the AIC value decreases the goodness of fit of the model increases.
 
+```{bash}
 Mut. rate\Scenario 	    Bottleneck	    Expansion	    Bot-Bot	    Bot-Exp
-5 x 10-7	            3326.02	          722.40       332507.58	  839.01
-5 x 10-8	            727.55	          6169.044	   24384.99	    670.97
-3 x 10-8	            656.69	          8494.53      11719.96	    679.18
-1 x 10-8	            656.42	          13841.13	   1836.10	    675.03
+5 x 10-7	            3326.02	    722.40          332507.58	    839.01
+5 x 10-8	            727.55	    6169.044	    24384.99	    670.97
+3 x 10-8	            656.69	    8494.53         11719.96	    679.18
+1 x 10-8	            656.42	    13841.13	    1836.10	    675.03
+
+
+```
+
 
 
 For each demographic model, we performed 100,000 simulations, 40 cycles of the expectation maximization and 50 replicate runs from different random starting values. We recorded the maximum likelihood parameter estimates that were obtained across replicate runs. Finally, we calculated the Akaike Information Criterion (AIC) and selected the model with the lowest AIC as the demographic model that best fitted the data. Parameter values were inferred in a second step by performing 100,000 simulations, 40 iterations of the expectation maximization and 100 replicate runs from different random starting values. 

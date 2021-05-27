@@ -82,7 +82,7 @@ We used the software ART (Huang, et al. 2012) for in silico sequencing of the la
 /artbinmountrainier2016.06.05linux64/art_bin_MountRainier/art_illumina -i GCA_005356885.1_ASM535688v1_genomic.fna -p -l 150 -f 20 -m 300 -s 10 -o C_flagellaris_
 ```
 
-Subsequently, we mapped the reads produced by ART to the C. beticola reference genome. The SNP ancestral states were assumed to be those present in the C. cf. flagellaris outgroup. The site frequency spectrum (SFS) was computed based on a total of 47,865 biallelic SNPs. 
+Subsequently, we mapped the reads produced by ART to the C. beticola reference genome. The SNP ancestral states were assumed to be those present in the C. cf. flagellaris outgroup. The site frequency spectrum (SFS) was computed based on a total of 47,865 biallelic SNPs. We have estimated the observed folded and unfolded SFS using the sofware Arlequin (Excoffier and Lischer 2010)
 
 To infer the demographic history of the C. beticola population, we used FastSIMCOAL2 (Excoffier, et al. 2013). FastSIMCOAL2 performs coalescent simulations to approximate the likelihood of the data given a certain demographic model and specific parameter values. Maximization of the likelihood was achieved using several Expectation Maximization iterations. To this end we generated: 1) 100,000 simulations to approximate the likelihood with high precision, 2) 40 cycles of the expectation maximization algorithm to ensure that the maximum was reached and 3) several independent replicate estimations to ensure that the global maximum likelihood was found. 
 
@@ -117,11 +117,12 @@ done
 
 For the specific distribution of the current and ancestral population size as well as for the distribution for time of the event, the mutation rate and recombination rate please find the tamplate and estimation files provided in the directory "Inference of the demographic history/2.scripts for FastSIMCOAL"
 
-An example of the estimation file for the scenario of two bottlenecks: 
+An example of the estimation file for the scenario of two bottlenecks:
 
+```{bash}
 // Priors and rules file
 // *********************
-```{bash}
+
 [PARAMETERS]
 //#isInt? #name #dist. #min #max
 //all N are in number of haploid individuals
